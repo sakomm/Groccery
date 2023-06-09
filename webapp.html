@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Groceries Web App</title>
+    <link rel="stylesheet" type="text/css" href="webcss.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel">
+            <h2>Choose an Action</h2>
+            <ul>
+                <li><a href="#add-remove">Add or Remove an Item from Groceries List</a></li>
+                <li><a href="#cheapest-location">Find Cheapest Location to Buy Groceries</a></li>
+                <li><a href="#find-coupons">Find Coupons for Groceries</a></li>
+            </ul>
+        </div>
+
+        <div class="panel">
+            <h2>Your Groceries List</h2>
+            <ul id="grocery-list">
+                <!-- Groceries items will be dynamically added/removed here -->
+                
+            </ul>
+        </div>
+
+        <div class="panel">
+            <h2>Output</h2>
+            <div id="output">
+                <!-- Output of selected action will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="webapp.js"></script>
+</body>
+
+</html>
