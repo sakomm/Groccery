@@ -1,38 +1,95 @@
+/* App.css */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex: 1;
+  
+  background-image: url("background.png");
+  /* make background image cover the entire page */
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+  padding: 20px;
+  flex: 1;
+  margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.panel:last-child {
+  margin-right: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-right: 10px;
+  /* make each button on new line */
+  margin-bottom: 10px;
+  display: inline-block;
+  outline: none;
+  border-width: 0px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: 500;
+  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.1s ease-out 0s, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+  background: rgb(0, 82, 204);
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px 12px;
+  vertical-align: middle;
+  width: auto;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  :hover {
+      background: rgb(0, 101, 255);
+      text-decoration: inherit;
+      transition-duration: 0s, 0.15s;
+      color: rgb(255, 255, 255);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.panel:nth-child(2) ul {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.panel:nth-child(3) div {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .panel {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
