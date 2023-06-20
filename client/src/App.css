@@ -7,11 +7,15 @@
   align-items: stretch;
   flex-wrap: wrap;
   flex: 1;
-  
-  background-image: url("background.png");
-  /* make background image cover the entire page */
+  /* background-image: url("background.png");
   background-size: cover;
+   */
 }
+
+/* .root {
+  background-image: url("background.png");
+  background-size: cover;
+} */
 
 .panel {
   background-color: #fff;
@@ -103,4 +107,13 @@ li {
     margin-right: 0;
     margin-bottom: 20px;
   }
+  
+}
+
+/* make it fill the entire screen  */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
 }
